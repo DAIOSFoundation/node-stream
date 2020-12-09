@@ -6,7 +6,7 @@ const CronJob = require('cron').CronJob,
 
 const job = new CronJob('*/5 * * * * *', function () {
     request
-        .get('https://media.diaos.net:' + port + '/api/streams', function (error, response, body) {
+        .get('http://media.daios.net:' + port + '/api/streams', function (error, response, body) {
             let streams = JSON.parse(body);
             if (typeof (streams['live'] !== undefined)) {
                 let live_streams = streams['live'];

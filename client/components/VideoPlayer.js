@@ -28,7 +28,7 @@ export default class VideoPlayer extends React.Component {
                     autoplay: false,
                     controls: true,
                     sources: [{
-                        src: 'https://media.diaos.net:' + config.rtmp_server.http.port + '/live/' + res.data.stream_key + '/index.m3u8',
+                        src: 'http://media.daios.net:' + config.rtmp_server.http.port + '/live/' + res.data.stream_key + '/index.m3u8',
                         type: 'application/x-mpegURL'
                     }],
                     fluid: true,

@@ -19,7 +19,7 @@ export default class Navbar extends React.Component {
     }
 
     getLiveStreams() {
-        axios.get('https://media.diaos.net:' + config.rtmp_server.http.port + '/api/streams')
+        axios.get('http://media.daios.net:' + config.rtmp_server.http.port + '/api/streams')
             .then(res => {
                 let streams = res.data;
                 if (typeof (streams['live'] !== 'undefined')) {
