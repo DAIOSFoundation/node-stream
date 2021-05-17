@@ -13,7 +13,7 @@ const express = require('express'),
     node_media_server = require('./media_server'),
     thumbnail_generator = require('./cron/thumbnails');
 
-mongoose.connect('mongodb://daib:DVw4ht40hmYM0nG0P4sSw0Rd@dvision-db.daios.net:27017/dvisionapi' , { useNewUrlParser: true });
+mongoose.connect('mongodb://daib:DVw4ht40hmYM0nG0P4sSw0Rd@dvision-db.daib.io:27017/dvision-db' , { useNewUrlParser: true });
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
