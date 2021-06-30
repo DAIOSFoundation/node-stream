@@ -6,7 +6,7 @@ import Settings from './Settings';
 
 import VideoPlayer from './VideoPlayer';
 const customHistory = require("history").createBrowserHistory();
-
+// TEST CODE
 export default class Root extends React.Component {
 
     constructor(props){
